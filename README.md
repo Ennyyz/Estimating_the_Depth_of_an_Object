@@ -110,10 +110,4 @@ Key findings:
  - MiDaS provided more accurate depth estimation compared to U-Net and StereoSGBM.
  - MiDaS also demonstrated faster processing speeds, making it suitable for real-time applications.
 
-## 4. Future Directions
-
-- Experiment with and compare the performance of other deep learning models for depth estimation.
-- Utilize larger and more diverse datasets for evaluating model generalization.
-- Explore more effective methods for combining deep learning and stereo vision to improve accuracy and processing speed.
-- Apply research findings to real-world applications like autonomous robots, self-driving cars, VR, and AR. 
 
