@@ -7,7 +7,8 @@ This project tackles the challenge of estimating object depth (distance from cam
 ### 1.1 Problem Definition
 
 #### 1.1.1 Research Objective
-Our research focuses on accurately estimating object depth in images by combining:
+
+My research focuses on accurately estimating object depth in images by combining:
 
 - **Depth Estimation:** Determining the distance of objects from the camera.
 - **Object Detection:** Identifying and localizing objects within an image.
@@ -26,7 +27,12 @@ Our research focuses on accurately estimating object depth in images by combinin
       - **Min:** Minimum depth value (closest point of the object).
       - **Mean:** Average depth value of the object.
       - **Median:** Median depth value, robust to outliers.
+
 <img src="/output/frame34.png" alt="Example Image 1"/>
+
+#### 1.1.4 Illustrative Example
+
+Imagine two cameras, similar to our eyes, capturing images of a moving bus. The goal is to determine the bus's location and distance from the cameras.
 
 **Method 1: Stereo Vision**
 
@@ -46,9 +52,10 @@ Our research focuses on accurately estimating object depth in images by combinin
 1. **Deep Learning Model:** A model (e.g., U-Net, MiDaS) is trained to predict depth directly from a single image.
 2. **Single Image Input:** The model takes the image of the bus as input.
 3. **Depth Map Output:** The model analyzes the image and predicts depth for each pixel, creating a depth map.
+
 <img src="/output/unet.webp" alt="Example Image 3"/>
 
-**Results:** Both stereo vision and deep learning generate depth maps and provide object location (bounding box) and depth information, enabling us to understand the bus's 3D position and its distance from other objects.
+**Results:** Both stereo vision and deep learning generate depth maps and provide object location (bounding box) and depth information, enabling an understanding of the bus's 3D position and its distance from other objects.
 
 ## MiDaS + YOLOv8 Demo
 
@@ -111,5 +118,3 @@ This research successfully implemented a system for object depth estimation, com
 Key findings:
  - MiDaS provided more accurate depth estimation compared to U-Net and StereoSGBM.
  - MiDaS also demonstrated faster processing speeds, making it suitable for real-time applications.
-
-
