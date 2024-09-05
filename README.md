@@ -26,12 +26,12 @@ Our research focuses on accurately estimating object depth in images by combinin
       - **Min:** Minimum depth value (closest point of the object).
       - **Mean:** Average depth value of the object.
       - **Median:** Median depth value, robust to outliers.
-![Frame Demo](/output/frame34.png)
+  <img src="/output/frame34.png" alt="Example Image 1"/>
 
 **Method 1: Stereo Vision**
 
 <p align="center">
-  <img src="/output/width_396.webp" alt="Example Image 1" width="396"/>
+  <img src="/output/width_396.webp" alt="Example Image 2" width="396"/>
 </p>
 1. **Matching Pixels:** The algorithm identifies corresponding points (like corners, wheels) representing the same location on the bus in both images.
 2. **Disparity Calculation:** By comparing the position difference of these points in the two images, disparity is calculated, representing the shift in object position when viewed from different angles.
