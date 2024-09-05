@@ -26,13 +26,13 @@ Our research focuses on accurately estimating object depth in images by combinin
       - **Min:** Minimum depth value (closest point of the object).
       - **Mean:** Average depth value of the object.
       - **Median:** Median depth value, robust to outliers.
-
-#### 1.1.4 Illustrative Example
-
-Imagine two cameras, similar to our eyes, capturing images of a moving bus. Our goal is to determine the bus's location and distance from the cameras.
+![Frame Demo](/output/frame34.png)
 
 **Method 1: Stereo Vision**
 
+<p align="center">
+  <img src="/output/width_396.webp" alt="Example Image 1" width="396"/>
+</p>
 1. **Matching Pixels:** The algorithm identifies corresponding points (like corners, wheels) representing the same location on the bus in both images.
 2. **Disparity Calculation:** By comparing the position difference of these points in the two images, disparity is calculated, representing the shift in object position when viewed from different angles.
 3. **Disparity to Depth Conversion:** Disparity, combined with camera parameters like baseline (distance between cameras), is used to calculate the distance of each point on the bus from the cameras, resulting in a depth map.
@@ -54,8 +54,8 @@ Imagine two cameras, similar to our eyes, capturing images of a moving bus. Our 
 
 #### 1.1.5 Datasets Used
 
-- **KITTI Vision Benchmark Suite:** Provides real-world driving scenes with stereo images, ground truth depth maps, camera information, and object annotations.
-- **DIODE:** Offers diverse indoor and outdoor scenes with high-resolution single images, depth maps, and segmentation masks, primarily used for training deep learning models.
+- **KITTI Vision Benchmark Suite:** Provides real-world driving scenes with stereo images, ground truth depth maps, camera information, and object annotations (https://www.cvlibs.net/datasets/kitti/).
+- **DIODE:** Offers diverse indoor and outdoor scenes with high-resolution single images, depth maps, and segmentation masks, primarily used for training deep learning models (https://diode-dataset.org/).
 
 ## 2. Comparing Traditional and Deep Learning Methods
 
