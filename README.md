@@ -50,7 +50,7 @@ Imagine two cameras, similar to our eyes, capturing images of a moving bus. Our 
 
 ## MiDaS + YOLOv8 Demo
 
-![Application Demo](/output/out6%20(29).avi)
+![Application Demo](/output/out6%20(29).gif)
 
 #### 1.1.5 Datasets Used
 
@@ -66,10 +66,10 @@ This chapter compares the performance of:
 
 ### 2.1 Performance Comparison
 
-| Method       | Accuracy | Processing Speed | Advantages                                                                          | Disadvantages                                                                                                                                                              |
-|--------------|----------|-----------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| StereoSGBM | Medium    | Medium           | - Easy setup with OpenCV. <br> - No model training required.                    | - Accuracy highly dependent on camera calibration quality. <br>-  Challenges with low-texture regions, occlusions, and varying lighting conditions.                   |
-| MiDaS      | High     | Fast            | - High accuracy and good generalization. <br>- Pre-trained and easy to use. <br>- Fast processing speed. | - Computationally more expensive than traditional methods. <br>- Evaluation metrics may not fully capture depth map quality.                                          |
+| Method       | Advantages                                                                          | Disadvantages                                                                                                                                                              |
+|--------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| StereoSGBM | - Easy setup with OpenCV. <br> - No model training required.                    | - Accuracy highly dependent on camera calibration quality. <br>-  Challenges with low-texture regions, occlusions, and varying lighting conditions.                   |
+| MiDaS      | - High accuracy and good generalization. <br>- Pre-trained and easy to use. <br>- Fast processing speed. | - Computationally more expensive than traditional methods. <br>- Evaluation metrics may not fully capture depth map quality.                                          |                                       |
 
 ### 2.2 Detailed Analysis
 
